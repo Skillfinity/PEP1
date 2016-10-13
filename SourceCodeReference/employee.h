@@ -25,11 +25,11 @@ class Employee
 {
 private:
     string emp_strEmpName;
-    string emp_strEmpNum;
+    int emp_intEmpNum;
 public:
-    void Emp_SetEmployeeDetails(string,string);
+    void Emp_SetEmployeeDetails(string,int);
     string Emp_GetEmployeeName();
-    string Emp_GetEmployeeNumber();
+    int Emp_GetEmployeeNumber();
 };
 
 #endif // EMPLOYEE_H

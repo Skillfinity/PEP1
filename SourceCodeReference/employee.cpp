@@ -42,7 +42,7 @@ void Employee::Emp_SetEmployeeDetails(string strName,string strNum)
 {
     //Set details
     emp_strEmpName = strName;
-    emp_strEmpNum = strNum;
+    emp_strEmpNum = intNum;
     //<Comment the important design decisions - why this has been implemented in this way>
 }
 
@@ -96,8 +96,8 @@ string Employee::Emp_GetEmployeeName()
  Additional Remarks: None sp special to mention
 
 **************************************************************************************************/
-string Employee::Emp_GetEmployeeNumber()
+int Employee::Emp_GetEmployeeNumber()
 {
     //<Comment the important design decisions - why this has been implemented in this way>
-    return emp_strEmpNum;
+    return emp_intEmpNum;
 }
