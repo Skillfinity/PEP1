@@ -26,6 +26,7 @@ int main()
     //To test if employee details are properly set, printing the details in console
     cout << "Employee Name is - "<<main_empEmployee1.Emp_GetEmployeeName() << " and "
          << "employee Number is - " << main_empEmployee1.Emp_GetEmployeeNumber()<< endl;
+        cout<<"Hello this is Likith"<<endl;
 
     return 0;
 }
