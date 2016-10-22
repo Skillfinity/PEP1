@@ -41,8 +41,8 @@
 void Employee::Emp_SetEmployeeDetails(string strName,string strNum)
 {
     //Set details
-    emp_strEmpName = "Nisarg";
-    emp_strEmpNum = "100";
+    emp_strEmpName = strName;
+    emp_strEmpNum = strNum;
     //<Comment the important design decisions - why this has been implemented in this way>
 }
 
