@@ -16,26 +16,6 @@
 
 #include "employee.h"
 
-/**************************************************************************************************
-                                          FUNCTION HEADER
-              All copy rights reserved by SKILLFINITY TECHNOLOGIES PRIVATE LIMITED - 2016
-
- Function Name: Set_EmployeeDetails
-
- Input Parameter Description:
-                            name: string parameter is used to pass Employee Name to the function
-                            num: string parameter is used to pass Employee Number to the function
-
- Return Parameter Description:
-                              none
-
- Function Description: Sets the employee details provided by the user of the function
-
- Author: Deepak Ramanna Hebbur
-
- Date Created: 13/10/2016
-
- Additional Remarks: None sp special to mention
 
 **************************************************************************************************/
 void Employee::Emp_SetEmployeeDetails(string strName,string strNum)
