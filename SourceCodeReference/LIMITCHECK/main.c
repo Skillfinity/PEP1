@@ -21,10 +21,10 @@ int main()
 
     printf("Float = Signed float\n Bytes=%d, Min Value=%E, Max Value=%E\n\n",sizeof(float),FLT_MIN,FLT_MAX);
     printf("double\n Bytes=%d, Min Value=%lE, Max Value=%lE\n\n",sizeof(double),DBL_MIN,DBL_MAX);
-    printf("long double\n Bytes=%d, Min Value=%lE, Max Value=%lE\n\n",sizeof(long double),LDBL_MIN,LDBL_MAX);
+    __mingw_printf("long double\n Bytes=%d, Min Value=%LE, Max Value=%LE\n\n",sizeof(long double),LDBL_MIN,LDBL_MAX);
 
     printf("Unsigned float, Unsigned double, Unsigned long double doesnot exist in C  \n\n");
-
+//__mingw_printf("ld_number = %LE \n", LDBL_MAX);
 
     return 0;
 }
