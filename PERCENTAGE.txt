@@ -1,0 +1,53 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+    float percentage;
+
+    printf("enter the percentage\n");
+
+    scanf("%f",&percentage);
+
+        if (percentage=>75)
+
+              {
+
+                    printf("distinction");
+        
+    
+              }
+
+      else if((percentage=>60)||(percentage<75))
+              {
+
+                    printf("first class");
+
+        
+    }
+    
+      else if((percentage=>50)||(percentage<=59))
+          
+    {
+ 
+                    printf("second class");
+
+        
+    }
+
+     else if((percentage=>35)||(percentage<=49))
+           {
+             
+        printf("pass");
+
+        
+    }
+
+    else
+
+        printf("fail")
+;
+      return 0;
+
+}
