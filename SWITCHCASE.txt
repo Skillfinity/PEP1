@@ -1,0 +1,52 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+    int x,y,z;
+
+    char ch;
+
+    printf("enter the tow numbers");
+
+    scanf("%d","%d",&x,&y);
+
+    scanf("%c", &ch);
+
+    switch(ch)
+
+    {
+
+        case 'a' : z=x+y;
+
+                        printf("result=%d",z);
+
+                        break;
+
+        case 's' : z=x-y;
+
+                        printf("result=%d",z);
+
+                        break;
+
+        case 'm' : z=x*y;
+
+                        printf("result=%d",z);   
+                        break;
+
+        case 'd' : z=x/y;
+
+                        printf("result=%d",z);
+
+                        break;
+
+        default :  printf("error");
+
+                        break;
+
+    }
+
+    return 0;
+
+}
