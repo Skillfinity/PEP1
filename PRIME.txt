@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+    int i,x;
+
+    printf("enter the value of x\n");
+
+    scanf("%d", &x);
+
+    for(i=1;i<x;i++)
+
+    {
+     
+          if((x==1)||(n==2))
+
+          printf("prime");
+
+          break;
+          
+    
+
+         if(x%i==0 && i==x)
+
+         printf("prime")
+
+          
+       
+        else
+   
+           printf("not prime");
+
+    }
+  
+    return 0;
+
+}
