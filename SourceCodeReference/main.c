@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void main()
+int main()
 {
-   int a=10,b=12;
-   a=a+b;
-   b=a-b;
-   a=a-b;
-   printf("swapped values are %d %d",a,b);
+   int len,wid,area,per;
+   float dia;
+   printf("enter the values of length and width\n");
+   scanf("%d %d",&len,&wid);
+   area=len*wid;
+   per =2*(len+wid);
+   dia=sqrt(len*len+wid*wid);
+   printf("area ,perimeter,diagonal length is: %d,%d,%f\n",area,per,dia);
+   return 0;
 }
