@@ -3,26 +3,18 @@
 
 int main()
 {
-   int x ,i,j,flag;
-   printf("enter the value of x\n");
-   scanf("%d",&x);
-   printf("prime numbers between 1 to %d:\n",x);
-   for(i=2;i<=x;i++)
-   {
-       flag=0;
-       for(j=2;j<=i/2;j++)
-       {
-
-           if(i%j==0)
-           {
-               flag=1;
-               break;
-           }
-       }
-       if(flag==0&&x!=1)
-        printf("%d\n",i);
-
-   }
+    int x,n1=0,n2=1,n3=0;
+    printf("enter the value of x\n");
+    scanf("%d",&x);
+    printf("fibonacci seris:\n");
+    printf("%d\n%d\n",n1,n2);
+    n3=n1+n2;
+    while(n3<=x)
+      {
+        printf("%d\n",n3);
+        n1=n2;
+        n2=n3;
+        n3=n1+n2;
+      }
     return 0;
-
 }
