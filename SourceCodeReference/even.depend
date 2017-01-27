@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1485496779 source:c:\users\kavitha\desktop\geetha\even\odd\oddnumbers.c
+	<stdio.h>
+	<conio.h>
+
