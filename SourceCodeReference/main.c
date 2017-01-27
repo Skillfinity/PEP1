@@ -3,16 +3,14 @@
 
 int main()
 {
-    float percent;
-    printf("enter  your percent:\n");
-    scanf("%f",&percent);
-    if(percent>=85)
-        printf("you are  distinction candidate");
-    else if(percent<85&&percent>=65)
-        printf("you are  first class candidate");
-    else if(percent<65&&percent>=35)
-        printf("you are second class candidate");
-    else
-        printf("candidate got failed ");
-    return 0;
+ int x,y;
+ printf("enter the values\n");
+ scanf("%d %d",&x,&y);
+ if(x>y)
+    printf("x is greater than y\n");
+ else if(x<y)
+    printf("x is lesser than y\n");
+ else
+    printf("both are equal\n");
+ return 0;
 }
