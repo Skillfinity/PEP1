@@ -1,58 +1,62 @@
-#include <stdio.h>
 
-void quicksort (int [], int, int);
-
-int main()
+#include<stdio.h>
+#include<string.h>
+void main()
 {
-    int list[50];
-    int size, i;
+int i,j,str1,str2,count=0,t;
+char m_name[30],f_name[30];
 
-    printf("Enter the number of elements: ");
-    scanf("%d", &size);
-    printf("Enter the elements to be sorted:\n");
-    for (i = 0; i < size; i++)
-    {
-        scanf("%d", &list[i]);
-    }
-    quicksort(list, 0, size - 1);
-    printf("After applying quick sort\n");
-    for (i = 0; i < size; i++)
-    {
-        printf("%d ", list[i]);
-    }
-    printf("\n");
-
-    return 0;
+printf("\n enter male name:\n");
+gets(m_name);
+printf("\n enter female name:\n");
+gets(f_name);
+str1=strlen(m_name);
+str2=strlen(f_name);
+for(i=0;i<str1;i++)
+{
+for(j=0;j<str2;j++)
+{
+if(m_name[i]==f_name[j])
+{
+m_name[i]='\0';
+f_name[j]='\0';
 }
-void quicksort(int list[], int low, int high)
+}
+}
+printf("\n REMAINING LATTERS:\n");
+for(i=0;i<str1;i++)
 {
-    int k, i, j, temp;
-    if (low < high)
-    {
-        k = low;
-        i = low;
-        j = high;
-        while (i < j)
-        {
-            while (list[i] <= list[k] && i <= high)
-            {
-                i++;
-            }
-            while (list[j] > list[k] && j >= low)
-            {
-                j--;
-            }
-            if (i < j)
-            {
-                temp = list[i];
-                list[i] = list[j];
-                list[j] = temp;
-            }
-        }
-        temp = list[j];
-        list[j] = list[k];
-        list[k] = temp;
-        quicksort(list, low, j - 1);
-        quicksort(list, j + 1, high);
-    }
+if(m_name[i]!='\0')
+{
+count++;
+printf("%c \t",m_name[i]);
+}
+}
+printf("\n");
+for(j=0;j<str2;j++)
+{
+if(f_name[j]!='\0')
+{
+count++;
+printf("%c \t",f_name[j]);
+}
+}
+printf("\n count=%d\n",count);
+t=count;
+if(t==5 || t==11 || t==17 ||t==23 || t==29)
+printf("ENEMY");
+else
+       if(t==7 || t==13 || t==19|| t==25 || t==1)
+
+printf("FRIEND");
+else if
+        (t==4 || t==10 || t==16 || t==22 || t==28)
+printf("MARRY");
+else if(t==2|| t==8 || t==14 || t==20 || t==26)
+printf("LOVE");
+else if(t==3|| t==9 || t==15 || t==21 || t==27)
+printf("AFFECTION");
+else
+printf("SISTERS/BROTHERS");
+return(0);
 }
